@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#c1,
+#c2 {
+    width: 650px;
+    height: auto;
+    z-index: -1;
+}
+
+#c1 {
+    position: absolute;
+    top: -230px;
+    left: 50px;
+}
+
+#c2 {
+    position: absolute;
+    right: 00px;
+    bottom: -340px;
+}
+
+.primary-box {
+    background-color: white;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.card-pattern img {
+    width: 400px;
+    border-radius: 10px 10px 0 0;
+}
+
+.profile-pic {
+    position: relative;
+}
+
+.profile-pic img {
+    width: 120px;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: -65px;
+    left: 135px;
+}
+
+h1 {
+    color: hsl(229, 23%, 23%);
+    font-size: 25px;
+}
+
+h2 {
+    color: hsl(227, 10%, 46%);
+    font-size: 23px;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+p {
+    font-size: 18px;
+    color: hsl(227, 10%, 46%);
+    margin: -10px auto 30px auto;
+    text-align: center;
+}
+
+strong {
+    color: hsl(229, 23%, 23%);
+    font-size: 20px;
+}
+
+.hr {
+    background-color: hsl(0, 2%, 81%);
+    width: 95%;
+    height: 1.5px;
+    margin: 15px auto;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 75px auto 0 auto;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 15px 50px 25px 50px;
+}
+
+span {
+    color: hsl(0, 0%, 59%);
+    font-size: 13px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (max-width:375px) {
+    .primary-box {
+        width: 325px;
+    }
+    .card-pattern img {
+        width: 325px;
+    }
+    .profile-pic img {
+        left: 100px;
+    }
+    .stats {
+        padding: 15px 30px 25px 30px;
+    }
+    #c1 {
+        top: -310px;
+        left: -450px;
+    }
+    #c2 {
+        right: -410px;
+        bottom: -350px;
+    }
+}
